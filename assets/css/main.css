@@ -15,7 +15,7 @@
   /* Color for headings, subheadings and title throughout the website */
   --accent-color: #3d5243;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff5b;
+  --surface-color: #ffffff76;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff;
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -139,7 +139,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 45px;
   margin-right: 8px;
 }
 
@@ -2332,6 +2332,70 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.social-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+  color:white;
+}
+
+.whatsapp {
+  background-color: #3d5243;
+}
+
+.instagram {
+  background-color: #3d5243bf;
+}
+
+.linkedin {
+  background-color: #3d5243;
+}
+
+.email {
+  background-color: #3d5243bf;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .social-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
